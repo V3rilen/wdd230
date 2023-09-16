@@ -1,0 +1,32 @@
+body{
+    display:grid;
+    height:100vh;
+    grid-template: auto auto 1rf auto / 1fr 200px;
+}
+
+header{
+    background-color: lightpink;
+    padding: 2rem;
+    grid-column: 1/3;
+}
+
+/* .left-sidebar {
+    background-color: lightblue;
+    grid-column: 1/2;
+} */
+
+main{
+    background-color: coral;
+    grid-column: 1/2;
+}
+
+.right-sidebar{
+    background-color: yellow;
+    grid-column: 2/3;
+}
+
+.footer{
+    background-color: wheat;
+    padding: 2rem;
+    grid-column: 1/3;
+}
