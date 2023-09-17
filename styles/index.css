@@ -14,7 +14,7 @@ body{
     /* align-self: center; */
 }
 
-headbar {
+.headbar {
     /* display: grid; */
     display: flex;
     flex-flow: row;
