@@ -1,9 +1,8 @@
 body{
     display: grid;
-    /* height: 100vh;
-    width: 100vw; */
-    grid-template: 100px auto 300px auto / 1fr;
-    font-size: 14px;
+    height: fit-content;
+    width: 100vw;
+    grid-template: 15vh 20vh auto auto / 1fr;
     color: black;
     margin: 0;
 }
@@ -12,7 +11,7 @@ body{
 headbar {
     background-color: #1d4d72;
     color: white;
-    font-size: 25px;
+    font-size: 75px;
     /* justify-content: center; */
     text-align: center;
     align-content: center;
@@ -32,6 +31,7 @@ nav{
     /* align-content: center; */
     row-gap: 6px;
     text-align: center;
+    font-size: 50px;
 }
 main{
     width:100%;
@@ -40,34 +40,52 @@ main{
     justify-content: center;
     justify-items: center;
     text-align: center;
+    font-size: 40px;
 
-}
-section{
-    background-color: red;
 }
 footer{
     background-color: #1d4d72;
     color: white;
-    font-size: 12px;
+    font-size: 40px;
     text-align: center;
     align-content: center;
     grid-row: 4;
+    padding: 16px;
 }
 
 
 /* ol{
     row-gap: 6px;
     column-gap: 6px;
-}
-
-li {
-    row-gap: 6px;
-    column-gap: 6px;
-
 } */
 
-.tableheader{
+li {
+    /* text-indent: 15px; */
+
+}
+
+.section-header{
+    /* display: block; */
+    /* border-radius: inherit; */
     background-color: #1d4d72;
     color: white;
-    width: 100%;
+    text-align: center;
+    /* box-sizing:border-box; */
+    /* width: 100%; */
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+
+.section-wrapper{
+    display: grid;
+    /* padding: 20px; */
+    margin: 16px;
+    border: 3px solid gray;
+    border-radius: 16px;
+}
+
+content{
+    display: grid;
+    text-align: left;
+    text-indent: 32px;
 }

@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewpoer" content="width=device-width, initial-scale=1">
-        <meta name="description" content="This is my description">
-        <title>My Home Page</title>
-        <link rel="stylesheet" href="./styles/index.css">
-        <script src="./scripts/getdates.js" defer></script>
-    </head>
-    <body>
-        <headbar>
-            <span>Asher P. Smith</span>
-        </headbar>
-        <nav>
-            <span>Home</span>
-            <span>Site Plan</span>
-            <span>Chamber</span>
-            <span>BYU-I</span>
-            <span>Scripture</span>
-        </nav>
-        <main>
-                <section>
-                    <header class="tableheader">
-                        <p>Front-End Web development:</p>
-                    </header>
-                    <ol>
-                        <li>
-                            <span>
-                                item 1
-                            </span>
-                        </li>
-                    </ol>
-
-                </section>
-        </main>
-        <footer>
-            <p>&copy;<span id="currentyear"></span></p>
-            <span id="lastmodified"></span>
-        </footer>
-    </body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpoer" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This is my description" />
+    <title>My Home Page</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="./scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <headbar>
+      <span>Asher P. Smith</span>
+    </headbar>
+    <nav>
+      <span>Home</span>
+      <span>Site Plan</span>
+      <span>Chamber</span>
+      <span>BYU-I</span>
+      <span>Scripture</span>
+    </nav>
+    <main>
+        <h1>Front-End Web development:</h1>
+      <section class="section-wrapper">
+        <header class="section-header">
+          <h1>Learning Activities:</h1>
+        </header>
+        <!-- <ol>
+          <li>
+            <span>Holy plan </span>
+          </li>
+          <li>
+            <span>Media Query</span>
+          </li>
+        </ol> -->
+        <content>
+          <span>01: Holy plan</span>
+        <span>02: Media Query</span>
+        <span>03:</span>
+        <span>04:</span>
+        <span>05:</span>
+        <span>06:</span>
+        <span>07:</span>
+        <span>08:</span>
+        <span>09:</span>
+        <span>10:</span>
+        </content>
+        
+      </section>
+      <section class="section-wrapper">
+        <header class="section-header">
+          <h1>Information:</h1>
+        </header>
+        <content>
+          <span id="location">Rexburd, Idaho </span>
+        <span id="tempature">Temp:77F </span>
+        <p>Page Visits:<span id="pagevisits">0</span></p>
+        </content>
+        
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span></p>
+      <span id="lastmodified"></span>
+    </footer>
+  </body>
 </html>
