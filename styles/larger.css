@@ -1,0 +1,26 @@
+@media (min-width: 700px){
+    nav{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    cardcontainer{
+        display:flex;
+        /* width: 80%; */
+        margin: 0px;
+        justify-content: space-around;
+    }
+    .card{
+        width: 50%;
+        font-size: 20px;
+    }
+    .card-header{
+        height:fit-content;
+    }
+    footer{
+        font-size: 16px;
+    }
+    li {
+        height:50px;
+    
+    }
+}

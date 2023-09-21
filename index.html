@@ -22,6 +22,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     />
     <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/larger.css" />
     <link rel="icon" href="./images/favicon.ico" />
     <script src="./scripts/getdates.js" defer></script>
   </head>
@@ -42,41 +43,43 @@
       >
     </nav>
     <main>
-      <span>WDD 230: Web Frontend Development</span>
-      <section class="card">
-        <header class="card-header">
-          <h3>Learning Activities</h3>
-        </header>
-        <ul>
-          <li>
-            <span>01: Holy plan </span>
-          </li>
-          <li>
-            <a href="./assignments/lesson02/index.html">02: Media Query</a>
-          </li>
-        </ul>
+      <header>WDD 230: Web Frontend Development</header>
+      <cardcontainer>
+        <section class="card">
+          <header class="card-header">
+            <h3>Learning Activities</h3>
+          </header>
+          <ul>
+            <li>
+              <span>01: Holy plan </span>
+            </li>
+            <li>
+              <a href="./assignments/lesson02/index.html">02: Media Query</a>
+            </li>
+          </ul>
 
-        <!-- <content>
-          <span>01: Holy plan</span>
-          <span>02: Media Query</span>
-          <span>03:</span>
-          <span>04:</span>
-          <span>05:</span>
-          <span>06:</span>
-          <span>07:</span>
-          <span>08:</span>
-          <span>09:</span>
-          <span>10:</span>
-        </content> -->
-      </section>
-      <section class="card">
-        <header class="card-header">
-          <h3>Information</h3>
-        </header>
-        <p><span id="location">Rexburd, Idaho </span></p>
-        <p><span id="tempature">Temp:77°F </span></p>
-        <p>Page Visits:<span id="pagevisits">0</span></p>
-      </section>
+          <!-- <content>
+            <span>01: Holy plan</span>
+            <span>02: Media Query</span>
+            <span>03:</span>
+            <span>04:</span>
+            <span>05:</span>
+            <span>06:</span>
+            <span>07:</span>
+            <span>08:</span>
+            <span>09:</span>
+            <span>10:</span>
+          </content> -->
+        </section>
+        <section class="card">
+          <header class="card-header">
+            <h3>Information</h3>
+          </header>
+          <p><span id="location">Rexburd, Idaho </span></p>
+          <p><span id="tempature">Temp:77°F </span></p>
+          <p>Page Visits:<span id="pagevisits">0</span></p>
+        </section>
+      </cardcontainer>
     </main>
     <footer>
       <p>&copy;<span id="currentyear"></span></p>
