@@ -1,0 +1,9 @@
+@media (min-width:800px){
+    main{
+        /* flex-flow: row wrap; */
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+/* .card{
+    width:25%;
+} */
+}
