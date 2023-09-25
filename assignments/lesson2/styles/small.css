@@ -14,7 +14,7 @@ main{
 }
 header.headbar{
     /* grid-column: 1/4; */
-    width: 100%;
+    /* width: 100%; */
     background-color: #1d4d72;
     text-align: center;
     color:white;
