@@ -34,17 +34,51 @@ body{
     /* grid-column: 0/1; */
 }
 
-nav{
+.nav-menu-button{
+    position: absolute;
+    right:8px;
+}
+
+
+/* .nav-menu-showbutton, .nav-menu-hidebutton{
+    display: none;
+} */
+.nav-menu{
+    position: fixed;
+    /* right: -400px; */
+    width: 150px;
+    top:0;
+    right: -150px;
+    height: 100%;
     color: white;
     background-color: black;
     grid-row:2;
     display: flex;
+    /* visibility: hidden; */
     flex-direction: column;
-    /* align-content: center; */
     row-gap: 6px;
     text-align: center;
     font-size: 24px;
-    padding: 8px;
+    /* padding: 8px; */
+    transition: right .5s;
+    /* transition: width .5s, visibility 0s 1s; */
+    z-index: 1;
+}
+.nav-menu.open{
+    /* visibility: visible; */
+    right:0;
+    /* width: 150px; */
+    /* transition: width .5s, visibility 0s 0s; */
+    /* transition: width .5s; */
+}
+nav{
+    position: absolute;
+    font-size: 30px;
+    top:0;
+    right:0;
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
 }
 nav a{
     color:white;
