@@ -10,19 +10,30 @@ body{
 }
  
 
-header{
+header.main-header{
+    display: flex;
     text-align: center;
-    background-color: #284b63ff;
-    /* width: 100%; */
+    justify-content: space-between;
+    /* font-size: 20px; */
+    /* background-color: #284b63ff; */
+    flex-direction: column;
+    background-size: 100%;
+    background-position: 50%;
+    background-image: url("https://scontent-den4-1.xx.fbcdn.net/v/t39.30808-6/381360094_296354913117244_3532114016515399809_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=1ac024&_nc_ohc=iyHDDcDPMmsAX_w8G8q&_nc_ht=scontent-den4-1.xx&oh=00_AfBXrPzIy6D2GqKAI8FbHs28MNPtFHIAL2_jmup42YhK8g&oe=651C159E");
+    /* height: 100%; */
     color: white;
     padding: 8px;
+    height:150px;
+    align-items: center;
     /* margin-top: 0px; */
 }
 h1{
     margin: 0;
+    /* height: 100%; */
 }
 
 .nav-menu-button{
+    color:white;
     position: absolute;
     right:8px;
 }
@@ -31,7 +42,7 @@ h1{
     position: fixed;
     /* right: -400px; */
     width: 150px;
-    top:0;
+    /* top:0; */
     right: -150px;
     height: 100%;
     color: white;
@@ -75,22 +86,37 @@ nav a:hover{
     /* border-radius: inherit; */
     background-color: #284b63ff;
     color: white;
-    text-align: center;
+    /* text-align: center; */
     /* box-sizing:border-box; */
     /* width: 100%; */
     border-top-right-radius: 13px;
     border-top-left-radius: 13px;
+    padding: 8px;
 }
 
 .card{
     /* width: 80%; */
     /* height:20%; */
     display: grid;
-    /* padding: 20px; */
+    
     margin: 16px;
     border: 3px solid gray;
     border-radius: 16px;
     font-size: 16px;
+}
+.card section{
+    /* display: flex; */
+    padding: 8px;
+}
+
+.card section ul{
+    margin: 0;
+    padding-left: 16px;
+}
+
+.wireframe{
+    /* transform: rotate(-90deg); */
+    width: 100%;
 }
 
 content{

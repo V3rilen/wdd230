@@ -1,8 +1,14 @@
 @media (min-width: 700px){
-    nav{
-    position: relative;
-    width: auto;
-    height: auto;
+main{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    /* width: 100%; */
+}
+nav{
+position: relative;
+width: auto;
+height: auto;
 }
 .nav-menu-button{
     display: none;
@@ -14,5 +20,12 @@
     top:0;
     left:0;
     width: 100%;
+}
+.card{
+    width: 40%;
+    height: fit-content;
+}
+.card header{
+    height: fit-content;
 }
 }
