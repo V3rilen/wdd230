@@ -1,3 +1,11 @@
+/* 
+--jet: #353535ff;
+--caribbean-current: #3c6e71ff;
+--white: #ffffffff;
+--platinum: #d9d9d9ff;
+--indigo-dye: #284b63ff;
+ */
+
 body{
     display: grid;
     height: fit-content;
@@ -20,7 +28,7 @@ body{
     flex-flow: row;
     column-gap: 32px;
     /* grid-template-rows: 32px auto 32px; */
-    background-color: #1d4d72;
+    background-color: #284b63ff;
     color: white;
     font-size: 30px;
     justify-content: center;
@@ -98,7 +106,7 @@ main{
 
 }
 footer{
-    background-color: #1d4d72;
+    background-color: #284b63ff;
     color: white;
     font-size: 30px;
     text-align: center;
@@ -111,7 +119,7 @@ footer{
     height: 100%;
     /* display: block; */
     /* border-radius: inherit; */
-    background-color: #1d4d72;
+    background-color: #284b63ff;
     color: white;
     text-align: center;
     /* box-sizing:border-box; */
