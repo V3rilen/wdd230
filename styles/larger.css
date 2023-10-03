@@ -3,7 +3,7 @@
         /* width: 100%; */
         position: static;
     }
-    cardcontainer{
+    section.card-container{
         display:flex;
         /* width: 80%; */
         margin: 0px;
