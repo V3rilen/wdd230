@@ -19,7 +19,7 @@ submitButton.addEventListener("click", () => {
       scriptureList.removeChild(newChapListItem);
     });
     linkButton.addEventListener("click", () => {
-      const linkAddress = prompt("Please Input Link URL");
+      const linkAddress = prompt("Please Enter Link URL");
       if (linkAddress) {
         newChapLabel.href = linkAddress;
         newChapLabel.target = "_blank";
