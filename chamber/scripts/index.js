@@ -1,6 +1,6 @@
 const navMenuButtons = document.querySelectorAll(".nav-menu-button");
 const navMenu = document.querySelector(".nav-menu");
-
+let spotlightSlideShowIndex = 0;
 let navMenuOpen = false;
 
 navMenuButtons.forEach((button) => {

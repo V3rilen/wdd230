@@ -28,4 +28,17 @@ height: auto;
 .card header{
     height: fit-content;
 }
+
+.spotlight-container{
+    column-gap: 8px;
+}
+
+.spotlight-container header{
+    grid-column: 1/4;
+}
+
+.spotlight{
+    grid-row: 2;
+    
+}
 }
