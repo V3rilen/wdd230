@@ -1,12 +1,16 @@
 :root{  
---jet: #353535ff;
---caribbean-current: #3c6e71ff;
+--borders: #353535ff;
+--highlight: #3c6e71ff;
 --white: #ffffffff;
 --platinum: #d9d9d9ff;
 --indigo-dye: #284b63ff;
+--main-background-color : "ffffff";
+--main-text-color : "#353535ff"
 }
 body{
     font-family: "Roboto", sans-serif;
+    background-color: var(--main-background-color);
+    color:var(--main-text-color);
 }
  
 
@@ -32,8 +36,15 @@ h1{
     /* height: 100%; */
 }
 
+.dark-mode-toggle{
+    position: absolute;
+    left:0;
+    top:0;
+    margin: 8px;
+}
+
 .nav-menu-button{
-    /* color:black; */
+    /* color:#353535ff; */
     position: absolute;
     right:8px;
 }
@@ -46,7 +57,7 @@ h1{
     right: -150px;
     height: 100%;
     color: white;
-    background-color: black;
+    background-color: #353535ff;
     grid-row:2;
     display: flex;
     /* visibility: hidden; */
@@ -82,13 +93,16 @@ nav a:hover{
 
 .card header{
     /* height: 100%; */
-    /* display: block; */
+    display: flex;
+    align-items: center;
     /* border-radius: inherit; */
     background-color: var(--indigo-dye);
     color: white;
+    gap:8px;
     /* text-align: center; */
     /* box-sizing:border-box; */
     /* width: 100%; */
+    align-content: center;
     border-top-right-radius: 13px;
     border-top-left-radius: 13px;
     padding: 8px;
@@ -126,7 +140,7 @@ content{
 }
 button.calltoaction{
     background-color: white;
-    color: var(--jet);
+    color: var(--alternate-highlight);
     padding: 24px;
     border-radius: 8px;
     font-size: 20px;
@@ -139,7 +153,7 @@ button:active {
 footer{
     /* position:sticky; */
     /* bottom: 0; */
-    background-color: var(--caribbean-current);
+    background-color: var(--highlight);
     color: white;
     /* font-size: 16px; */
     text-align: center;

@@ -5,6 +5,13 @@
 --platinum: #d9d9d9ff;
 --indigo-dye: #284b63ff;
  */
+ :root{  
+    --jet: #353535ff;
+    --caribbean-current: #3c6e71ff;
+    --white: #ffffffff;
+    --platinum: #d9d9d9ff;
+    --indigo-dye: #284b63ff;
+    }
 
 body{
     display: grid;
@@ -58,7 +65,7 @@ body{
     right: -150px;
     height: 100%;
     color: white;
-    background-color: black;
+    background-color: var(--jet);
     grid-row:2;
     display: flex;
     /* visibility: hidden; */
