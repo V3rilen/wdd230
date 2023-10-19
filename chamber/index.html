@@ -5,7 +5,7 @@
     <meta property="og:type" content="Chamber" />
     <meta
       property="og:title"
-      content="WDD 230 - Web Frontend Development Chamber Page"
+      content="WDD 230 - Web Frontend Development Chamber of Commerce"
     />
     <meta
       property="og:description"
@@ -19,7 +19,7 @@
       content="WDD 230 - Web Frontend Development Chamber Page"
     />
     <meta name="author" content="Asher Smith" />
-    <title>WDD 230 - Web Frontend Development Chamber Page</title>
+    <title>WDD 230 - Web Frontend Development Chamber of Commerce</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -36,15 +36,22 @@
   </head>
   <body>
     <header class="main-header">
-      <!-- <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Historic_Downtown_Provo%2C_Utah_looking_northwest_on_University_Ave.jpg/1200px-Historic_Downtown_Provo%2C_Utah_looking_northwest_on_University_Ave.jpg?20200725052824"
-        alt="Page Banner of Provo"
-      /> -->
+      <picture>
+        <source
+          media="(min-width:800px)"
+          srcset="./images/hero_image_large.webp"
+        />
+        <source
+          media="(min-width:600px)"
+          srcset="./images/hero_image_medium.webp"
+        />
+        <img src="./images/hero_image_small.webp" alt="Page Banner of Provo" />
+      </picture>
+
       <h1>Provo City</h1>
       <button class="calltoaction">Join</button>
       <h1>Chamber of Commerce</h1>
     </header>
-    <button class="dark-mode-toggle">Light</button>
     <nav>
       <span class="nav-menu-button">≡</span>
       <section class="nav-menu">
@@ -53,6 +60,10 @@
         <a href="#">Discovery</a>
         <a href="#">Directory</a>
         <a href="#">Join</a>
+        <label class="dark-mode-toggle">
+          <input type="checkbox" class="dark-mode-input" />
+          <span class="slider"></span>
+        </label>
       </section>
     </nav>
     <main class="home-main">
@@ -152,7 +163,7 @@
           </div>
         </section>
       </section>
-      <section>
+      <section class="local-organizations">
         <header>
           <span>Local Organizations</span>
         </header>
@@ -160,7 +171,7 @@
           <header>
             <a href="https://provocaps.yourcapsnetwork.org/" target="_blank">
               <img
-                src="./images/provo-caps-logo-notext.png"
+                src="./images/provo-caps-logo-notext-small.webp"
                 alt="provo caps logo"
                 style="width: 25px"
               />
@@ -181,6 +192,16 @@
             >
           </section>
         </div>
+      </section>
+      <section class="card">
+        <header>
+          <span>Weather</span>
+        </header>
+        <section style="display: flex; flex-direction: column">
+          <span>Tempeture: <span id="temperature">28</span>ºF</span>
+          <span>Windspeed: <span id="windspeed">25.0</span>mph</span>
+          <span>Wind Chill: <span id="windchill"></span>ºF</span>
+        </section>
       </section>
 
       <!-- <section>

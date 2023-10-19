@@ -29,7 +29,7 @@
   </head>
   <body>
     <header class="headbar">
-      <img src="./images/pfp.jpg" alt="Picture of Asher Smith" class="pfp" />
+      <img src="./images/pfp.webp" alt="Picture of Asher Smith" class="pfp" />
       <span>Asher P. Smith</span>
     </header>
     <nav>
@@ -49,6 +49,17 @@
       </section>
     </nav>
     <main>
+      <picture style="max-height: 250px; object-fit: cover">
+        <span
+          style="position: absolute; left: 50%; transform: translate(-50%, 0)"
+          >Provo City Center Temple</span
+        >
+        <source
+          media="(min-width:700px)"
+          srcset="./images/temple-landscape.webp"
+        />
+        <img src="./images/Provo-City-Center-small.webp" width="100%" />
+      </picture>
       <header>WDD 230: Web Frontend Development</header>
       <section class="card-container">
         <section class="card">
