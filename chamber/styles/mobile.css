@@ -32,6 +32,7 @@ header.main-header{
     /* height:fit; */
     align-items: center;
     overflow: hidden;
+    height: 300px;
     /* object-fit:fill; */
     /* margin-top: 0px; */
 }
@@ -45,9 +46,40 @@ header.main-header picture img{
     width: 100%;
     min-width: 400px;
 }
+
+header.main-header .overlay{
+    display: flex;
+    /* justify-content:center; */
+    flex-direction: row;
+    /* flex: row; */
+    height: 100%;
+    align-items: center;
+}
 h1{
     margin: 0;
     /* height: 100%; */
+}
+
+.headbar {
+    /* display: grid; */
+    display: flex;
+    flex-flow: row;
+    column-gap: 16px;
+    /* grid-template-rows: 32px auto 32px; */
+    background-color: #284b63ff;
+    color: white;
+    font-size: 14px;
+    justify-content: space-around;
+    /* text-align: center; */
+    align-items: center;
+    width: 100%;
+    padding: 16px;
+}
+
+.headbar img{
+    width: 100px; 
+    /* font-size: 8px; */
+    border-radius: 8px;
 }
 
 /* .dark-mode-toggle{
@@ -138,11 +170,6 @@ nav a:hover{
 .card section ul{
     margin: 0;
     padding-left: 16px;
-}
-
-.wireframe{
-    /* transform: rotate(-90deg); */
-    width: 100%;
 }
 
 content{
