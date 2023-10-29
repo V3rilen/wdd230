@@ -5,10 +5,6 @@ main{
     justify-content: space-evenly;
     /* width: 100%; */
 }
-header.main-header{
-    height: 600px;
-    /* justify-content: flex-start; */
-}
 /* header.main-header .overlay{
     display: inherit;
     flex-direction: inherit;
@@ -53,5 +49,12 @@ height: auto;
 .spotlight{
     grid-row: 2;
     
+}
+.headbar img{
+    width: 200px; 
+    /* border-radius: 8px; */
+}
+.headbar{
+    font-size: 20px;
 }
 }
