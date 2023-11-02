@@ -4,6 +4,29 @@ let spotlightSlideShowIndex = 0;
 let navMenuOpen = false;
 let darkModeEnabled = false;
 const darkModeToggle = document.querySelector(".dark-mode-toggle input");
+if (localStorage.getItem("darkModeEnabled")) {
+  rawDarkModeEnabled = localStorage.getItem("darkModeEnabled");
+  if (rawDarkModeEnabled == "true") {
+    darkModeEnabled = true;
+  }
+}
+if (!darkModeEnabled) {
+  darkModeToggle.innerHTML = "Light";
+  document.documentElement.style.setProperty(
+    "--main-background-color",
+    "#ffffff"
+  );
+  document.documentElement.style.setProperty("--main-text-color", "#353535ff");
+  darkModeToggle.checked = false;
+} else {
+  darkModeToggle.innerHTML = "Dark";
+  document.documentElement.style.setProperty(
+    "--main-background-color",
+    "#353535ff"
+  );
+  document.documentElement.style.setProperty("--main-text-color", "#d9d9d9ff");
+  darkModeToggle.checked = true;
+}
 
 navMenuButtons.forEach((button) => {
   button.addEventListener("click", () => {
@@ -12,7 +35,8 @@ navMenuButtons.forEach((button) => {
 });
 
 darkModeToggle.addEventListener("change", () => {
-  if (darkModeEnabled) {
+  darkModeEnabled = !darkModeEnabled;
+  if (!darkModeEnabled) {
     darkModeToggle.innerHTML = "Light";
     document.documentElement.style.setProperty(
       "--main-background-color",
@@ -22,7 +46,6 @@ darkModeToggle.addEventListener("change", () => {
       "--main-text-color",
       "#353535ff"
     );
-    darkModeEnabled = false;
   } else {
     darkModeToggle.innerHTML = "Dark";
     document.documentElement.style.setProperty(
@@ -33,8 +56,8 @@ darkModeToggle.addEventListener("change", () => {
       "--main-text-color",
       "#d9d9d9ff"
     );
-    darkModeEnabled = true;
   }
+  localStorage.setItem("darkModeEnabled", darkModeEnabled);
 
   // document.style.setProperty("--alternate-highlight", "#d9d9d9ff");
 });

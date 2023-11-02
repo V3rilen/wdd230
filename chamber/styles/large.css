@@ -57,4 +57,15 @@ height: auto;
 .headbar{
     font-size: 20px;
 }
+.local-gallery{
+    grid-column: 2;
+}
+.discover-main{
+    grid-template-columns: 1fr 1fr;
+}
+
+.local-gallery img:hover{
+box-shadow: 0 0 16px 8px rgba(128, 128, 128, 0.516);
+/* border: 3px solid gray; */
+}
 }
