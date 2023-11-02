@@ -6,7 +6,7 @@
 --indigo-dye: #284b63ff;
 --main-background-color : "ffffff";
 --main-text-color : "#353535ff";
---darkmode-toggle : rgb(206, 175, 0);
+--highlight2 : rgb(206, 175, 0);
 }
 body{
 font-family: "Roboto", sans-serif;
@@ -283,7 +283,7 @@ opacity: 0%;
 }
 
 .dark-mode-toggle input:checked + .slider {
-background-color: var(--darkmode-toggle);
+background-color: var(--highlight2);
 }
 
 /* .dark-mode-toggle input:focus + .slider {
@@ -326,4 +326,68 @@ transform: translateX(100%);
 .local-gallery img{
     border-radius: 16px;
     max-width: 100%;
+}
+
+input:invalid{
+    border-color: red;
+}
+input{
+    display: block;
+    padding: 8px;   
+    /* width: 30rem; */
+}
+label{
+    display: block;
+    margin: 16px 0 16px 0 ;
+}
+
+label[for="memberlevel"]{
+    display: flex;
+    gap:16px;
+    margin: 0 0 8px 16px;
+
+    /* width: 50%; */
+}
+label[for="organization-desc"] textarea{
+    display: block;
+    width: 300px;
+}
+/* label{
+    margin-top:.5rem;
+} */
+form{
+    margin: 16px;
+    border: 2px solid var(--platinum);
+    padding: 16px;
+    /* display: flex; */
+    /* justify-content: left; */
+    /* width: 100%; */
+}
+fieldset{
+    /* margin: 0; */
+    width: 100%;
+}
+
+
+.memberlevel-selector{
+    margin: 16px 0 16px 0;
+}
+
+
+.join-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.memberlevel-benefits{
+    border: 2px solid var(--highlight2);
+    /* border-radius: 16px; */
+    padding: 16px;
+    margin: 16px;
+}
+
+.memberlevel-benefits header{
+    border-bottom: 2px solid var(--highlight2);
 }

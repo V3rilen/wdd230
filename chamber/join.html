@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:url" content="https://v3rilen.github.io/wdd230/" />
+    <meta property="og:type" content="Chamber" />
+    <meta
+      property="og:title"
+      content="WDD 230 - Web Frontend Development Chamber of Commerce"
+    />
+    <meta
+      property="og:description"
+      content="WDD 230 - Web Frontend Development Chamber Page"
+    />
+    <meta property="og:image" content="../images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development Chamber Page"
+    />
+    <meta name="author" content="Asher Smith" />
+    <title>WDD 230 - Web Frontend Development Chamber of Commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/discover.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="headbar">
+        <img src="./images/provo-logo.png" alt="Provo Logo" class="pfp" />
+        <span>Provo City Chamber of Commerce</span>
+      </section>
+    </header>
+    <nav>
+      <span class="nav-menu-button">≡</span>
+      <section class="nav-menu">
+        <span class="nav-menu-button">X</span>
+        <a href="./index.html">Home</a>
+        <a href="./discover.html">Discovery</a>
+        <a href="#">Directory</a>
+        <a href="./join.html">Join</a>
+        <label class="dark-mode-toggle">
+          <input type="checkbox" class="dark-mode-input" />
+          <span class="slider"></span>
+        </label>
+      </section>
+    </nav>
+    <main class="join-main">
+      <form action="./thankyou.html">
+        <label for="fname">
+          First Name*
+          <input type="text" id="fname" name="fname" required />
+        </label>
+        <label for="lname">
+          Last Name*
+          <input type="text" id="lname" name="lname" required />
+        </label>
+        <label for="position">
+          Position
+          <input
+            type="text"
+            id="position"
+            name="position"
+            pattern="[a-zA-Z0-9\- ]{7,}"
+          />
+        </label>
+        <label for="email">
+          Email*
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            pattern="[\w\.]+@byui\.edu"
+            placeholder="example@byui.edu"
+          />
+        </label>
+        <label for="phonenumber">
+          Phone Number*
+          <input
+            type="telephone"
+            id="phonenumber"
+            name="phonenumber"
+            required
+            pattern="[\d\-]{9,}"
+            placeholder="123-456-7890"
+          />
+        </label>
+        <label for="organization">
+          Organization Name*
+          <input type="text" id="organization" name="organization" required />
+        </label>
+        <div class="memberlevel-selector">
+          <h3>Membership Level</h3>
+          <!-- <br /> -->
+          <label for="memberlevel">
+            <input
+              type="radio"
+              id="memberlevel-np"
+              name="memberlevel"
+              required
+              value="np"
+            />
+            NP
+          </label>
+          <label for="memberlevel">
+            <input
+              type="radio"
+              id="memberlevel-bronze"
+              name="memberlevel"
+              required
+              value="bronze"
+            />
+            Bronze
+          </label>
+          <label for="memberlevel">
+            <input
+              type="radio"
+              id="memberlevel-silver"
+              name="memberlevel"
+              required
+              value="silver"
+            />
+            Silver
+          </label>
+          <label for="memberlevel">
+            <input
+              type="radio"
+              id="memberlevel-np"
+              name="memberlevel"
+              value="gold"
+              required
+            />
+            Gold
+          </label>
+        </div>
+        <label for="organization-desc">
+          Organization Description
+          <textarea id="organization-desc" name="organization-desc"></textarea>
+        </label>
+        <input type="hidden" id="timestamp" name="timestamp" />
+        <button type="submit">Join Us!</button>
+      </form>
+      <section class="memberlevel-benefits">
+        <header>
+          <h1>Membership Levels</h1>
+        </header>
+        <h3>Non-Profit(NP) Membership</h3>
+        <ul>
+          <li>
+            <span>For non profit organizations and there is no fee</span>
+          </li>
+        </ul>
+        <h3>Bronze Membership</h3>
+        <ul>
+          <li>
+            <span>15% discount on events</span>
+          </li>
+          <li>
+            <span>10% discount on advertising</span>
+          </li>
+          <li>
+            <span>Fee of $50/month</span>
+          </li>
+        </ul>
+        <h3>Silver Membership</h3>
+        <ul>
+          <li>
+            <span>25% discount on events</span>
+          </li>
+          <li>
+            <span>15% discount on advertising</span>
+          </li>
+          <li>
+            <span>Free participation in the trade fair</span>
+          </li>
+          <li>
+            <span>Fee of $100/month</span>
+          </li>
+        </ul>
+        <h3>Gold Membership</h3>
+        <ul>
+          <li>
+            <span>50% discount on events</span>
+          </li>
+          <li>
+            <span>50% discount on advertising</span>
+          </li>
+          <li>
+            <span>Free participation in the trade fair</span>
+          </li>
+          <li>
+            <span>5 free featured ads per year</span>
+          </li>
+          <li>
+            <span>1 free training per quarter</span>
+          </li>
+          <li>
+            <span>Fee of $250/month</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span></p>
+      <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+  </body>
+</html>

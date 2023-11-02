@@ -4,6 +4,7 @@ let spotlightSlideShowIndex = 0;
 let navMenuOpen = false;
 let darkModeEnabled = false;
 const darkModeToggle = document.querySelector(".dark-mode-toggle input");
+const callToActionBtn = document.querySelector(".calltoaction");
 if (localStorage.getItem("darkModeEnabled")) {
   rawDarkModeEnabled = localStorage.getItem("darkModeEnabled");
   if (rawDarkModeEnabled == "true") {
@@ -60,6 +61,10 @@ darkModeToggle.addEventListener("change", () => {
   localStorage.setItem("darkModeEnabled", darkModeEnabled);
 
   // document.style.setProperty("--alternate-highlight", "#d9d9d9ff");
+});
+
+callToActionBtn.addEventListener("click", () => {
+  window.location = "./join.html";
 });
 
 let today1 = new Date();
