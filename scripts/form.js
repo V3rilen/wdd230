@@ -2,7 +2,8 @@ const passwordInput = document.querySelector("#passwordInput");
 const passwordConfirm = document.querySelector("#passwordConfirm");
 const form = document.querySelector("form");
 const passwordMessage = document.querySelector("#passwordMessage");
-
+const pageRaiting = document.querySelector("#pageRaiting");
+const raitingDisplay = document.querySelector("#raitingDisplay");
 //talk to datwyler about stave moulds video on spintronics!!
 // console.log(passwordInput);
 // console.log(passwordConfirm);
@@ -20,4 +21,8 @@ passwordConfirm.addEventListener("blur", () => {
     passwordConfirm.classList.remove("invalid");
     passwordMessage.textContent = "";
   }
+});
+
+pageRaiting.addEventListener("change", () => {
+  raitingDisplay.textContent = pageRaiting.value;
 });

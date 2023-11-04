@@ -193,7 +193,9 @@ text-indent: 32px;
 }
 button.calltoaction{
 background-color: white;
-color: var(--alternate-highlight);
+color: #353535ff;
+/* background-color: var(--main-background-color);
+color: var(--main-text-color); */
 padding: 24px;
 border-radius: 8px;
 font-size: 20px;
