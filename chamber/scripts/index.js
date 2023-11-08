@@ -63,9 +63,11 @@ darkModeToggle.addEventListener("change", () => {
   // document.style.setProperty("--alternate-highlight", "#d9d9d9ff");
 });
 
-callToActionBtn.addEventListener("click", () => {
-  window.location = "./join.html";
-});
+if (callToActionBtn) {
+  callToActionBtn.addEventListener("click", () => {
+    window.location = "./join.html";
+  });
+}
 
 let today1 = new Date();
 
@@ -80,7 +82,6 @@ let today1 = new Date();
 
 document.querySelector("#currentyear").textContent = today1.getFullYear();
 document.querySelector("#lastmodified").textContent = document.lastModified;
-
 const temperatureSpan = document.querySelector("#temperature");
 const windspeedSpan = document.querySelector("#windspeed");
 const windchillSpan = document.querySelector("#windchill");
