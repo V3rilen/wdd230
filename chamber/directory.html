@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta property="og:url" content="https://v3rilen.github.io/wdd230/" />
+    <meta property="og:type" content="Chamber" />
+    <meta
+      property="og:title"
+      content="WDD 230 - Web Frontend Development Chamber of Commerce"
+    />
+    <meta
+      property="og:description"
+      content="WDD 230 - Web Frontend Development Chamber Page"
+    />
+    <meta property="og:image" content="../images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 230 - Web Frontend Development Chamber Page"
+    />
+    <meta name="author" content="Asher Smith" />
+    <title>WDD 230 - Web Frontend Development Chamber of Commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+    <link rel="icon" href="../images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/directory.js" defer></script>
+  </head>
+  <body>
+    <header class="main-header">
+      <section class="headbar">
+        <img src="./images/provo-logo.png" alt="Provo Logo" class="pfp" />
+        <span>Provo City Chamber of Commerce</span>
+      </section>
+    </header>
+    <nav>
+      <span class="nav-menu-button">≡</span>
+      <section class="nav-menu">
+        <span class="nav-menu-button">X</span>
+        <a href="./index.html">Home</a>
+        <a href="./discover.html">Discovery</a>
+        <a href="./directory.html">Directory</a>
+        <a href="./join.html">Join</a>
+        <label class="dark-mode-toggle">
+          <input type="checkbox" class="dark-mode-input" />
+          <span class="slider"></span>
+        </label>
+      </section>
+    </nav>
+    <main class="directory-main"></main>
+    <footer>
+      <p>&copy;<span id="currentyear"></span></p>
+      <p>Last modified: <span id="lastmodified"></span></p>
+    </footer>
+  </body>
+</html>
