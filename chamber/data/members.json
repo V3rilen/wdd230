@@ -1,3 +1,59 @@
-{
-    "name":"Asher Smith"
-}
+[
+    {
+    "name":"Provo CAPS",
+    "address":"75 W Center Street,Provo, Utah 84604",
+    "phone":"",
+    "website":"https://provocaps.yourcapsnetwork.org/",
+    "icon":"https://provocaps.yourcapsnetwork.org/wp-content/uploads/sites/54/2022/06/Caps-Logo-white-HEX.png",
+    "memberLevel":"np"
+    },
+    {
+    "name":"Days Market",
+    "address":"3121 N Canyon Rd, Provo, UT 84604",
+    "phone":"801-375-7960",
+    "website":"https://www.daysmarket.com/",
+    "icon":"https://afs-media.netlify.app/daysmarket/logo.png",
+    "memberLevel":"gold"
+    },
+    {
+    "name":"Ono's Malasadas",
+    "address":"3225 North Canyon Road Provo, UT 84604",
+    "phone":"",
+    "website":"https://www.onosmalasadas.com/",
+    "icon":"https://www.onosmalasadas.com/uploads/b/699d5b60-e0ff-11eb-949d-bf15644d2c43/Pic-1-2_MjE0MT.jpg",
+    "memberLevel":"bronze"
+    },
+    {
+    "name":"Maglebys Fresh",
+    "address":"3362 N. University Ave. Provo, Utah 84604",
+    "phone":"801-852-8620",
+    "website":"https://www.maglebysfresh.com/",
+    "icon":"https://maglebysfresh.wpenginepowered.com/wp-content/uploads/2018/09/logo.png",
+    "memberLevel":"silver"
+    },
+    {
+    "name":"Good Move Cafe",
+    "address":"1 E. Center St. Suite 100",
+    "phone":"801-850-9113",
+    "website":"https://www.snakesandlattes.com/provo",
+    "icon":"https://images.squarespace-cdn.com/content/v1/61c86bfc61ba11700703f07a/070302f8-9770-474b-a269-5ecd87eb24a9/rainbowcolor+%281%29.png?format=1500w",
+    "memberLevel":"bronze"
+    },
+    {
+    "name":"Boba Bee",
+    "address":"180 N University Ave #120, Provo, UT 84601",
+    "phone":"801-607-1264",
+    "website":"https://bobabeehive.com/",
+    "icon":"https://bobabeehive.com/img/logo.png",
+    "memberLevel":"gold"
+    },
+    {
+    "name":"Rockwell Ice Cream",
+    "address":"43 N University Ave, Provo, UT 84601",
+    "phone":"801-318-5950",
+    "website":"https://www.rockwellicecream.com/",
+    "icon":"https://static.wixstatic.com/media/c6afb8_deec77b600ff4899944da2150fb36e31~mv2.png/v1/fill/w_758,h_588,al_c,lg_1,q_90,enc_auto/image001%20(2)_edited.png",
+    "memberLevel":"gold"
+    }
+    
+]

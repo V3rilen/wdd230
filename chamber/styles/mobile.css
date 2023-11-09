@@ -13,6 +13,7 @@ font-family: "Roboto", sans-serif;
 background-color: var(--main-background-color);
 color:var(--main-text-color);
 transition: .25s all;
+/* height: 100%; */
 }
 
 
@@ -177,10 +178,11 @@ border-radius: 16px;
 font-size: 16px;
 }
 .card section{
-/* display: flex; */
+/* display: flex;
+flex-direction: column;
+align-content: left; */
 padding: 8px;
 }
-
 .card section ul{
 margin: 0;
 padding-left: 16px;
@@ -392,4 +394,15 @@ fieldset{
 
 .memberlevel-benefits header{
     border-bottom: 2px solid var(--highlight2);
+}
+
+#member-cards-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    column-gap:16px;
+    width: 90%;
+}
+
+#member-cards-holder .card{
+    width: 100%;
 }
