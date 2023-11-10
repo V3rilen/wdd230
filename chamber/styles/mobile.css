@@ -396,6 +396,16 @@ fieldset{
     border-bottom: 2px solid var(--highlight2);
 }
 
+.directory-main{
+    display: flex;
+    flex-direction: column;
+}
+
+#display-switch{
+    align-self: flex-end;
+    width: max-content;
+}
+
 #member-cards-holder{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
@@ -405,4 +415,17 @@ fieldset{
 
 #member-cards-holder .card{
     width: 100%;
+}
+
+.hidden{
+    display: none;
+}
+
+#members-table a{
+    color: inherit;
+}
+
+#members-table tr:nth-child(even){
+    background-color: var(--main-text-color);
+    color:var(--main-background-color);
 }
