@@ -31,11 +31,11 @@ const getMemberData = async () => {
   members.forEach((member) => {
     if (displayAsTable) {
       const rowTemplate = `
-        <td><span>${member.name}</span></td>
-        <td><span>${member.address}</span></td>
-        <td><span>${member.phone}</span></td>
-        <td><a href="${member.website}" target="_blank">${member.website}</a></td>
-        <td><span>${member.memberLevel}</span></td>
+        <td itemName="Name:"><span>${member.name}</span></td>
+        <td itemName="Address:"><span>${member.address}</span></td>
+        <td itemName="Phone #:"><span>${member.phone}</span></td>
+        <td itemName="website:"><a href="${member.website}" target="_blank">${member.website}</a></td>
+        <td itemName="Membership Level:"><span>${member.memberLevel}</span></td>
       `;
       const newRow = document.createElement("tr");
       // newCard.classList.add("card");

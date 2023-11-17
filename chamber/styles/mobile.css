@@ -188,6 +188,12 @@ margin: 0;
 padding-left: 16px;
 }
 
+.card section p{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    }
+
 content{
 display: grid;
 text-align: left;
@@ -425,7 +431,30 @@ fieldset{
     color: inherit;
 }
 
+#members-table tr td::before{
+    content:attr(itemName);
+}
+
 #members-table tr:nth-child(even){
     background-color: var(--main-text-color);
     color:var(--main-background-color);
+}
+#members-table th{
+    display: none;
+}
+
+#members-table td{
+    display: flex;
+}
+
+#banner{
+    width: 100%;
+    text-align: center;
+    background-color: var(--highlight2);
+    color:var(--borders)
+    /* display: none; */
+}
+
+#banner-button{
+    font-size: 21px;
 }

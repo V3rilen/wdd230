@@ -83,4 +83,11 @@ box-shadow: 0 0 16px 8px rgba(128, 128, 128, 0.516);
 #member-cards-holder{
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
 }
+
+#members-table td{
+    display:table-cell;
+}
+#members-table tr td::before{
+    content:"";
+}
 }
