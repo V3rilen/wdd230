@@ -150,7 +150,7 @@ color:gray;
 }
 
 
-.card header{
+.card > header{
 /* height: 100%; */
 display: flex;
 align-items: center;
@@ -457,4 +457,14 @@ fieldset{
 
 #banner-button{
     font-size: 21px;
+}
+
+#forcast{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* padding: 0; */
+}
+#forcast section:not(:last-child){
+    border-right: 3px solid gray;
 }

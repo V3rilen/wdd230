@@ -87,6 +87,7 @@ const temperatureSpan = document.querySelector("#temperature");
 const windspeedSpan = document.querySelector("#windspeed");
 const windchillSpan = document.querySelector("#windchill");
 const weatherIcon = document.querySelector("#weather-icon");
+const forcastCard = document.querySelector("#forcast");
 const LAT = 43.8300505;
 const LON = -111.7881829;
 const apiKey = "1e82d7865ded7fa3165d96b9bdd12312";
@@ -160,7 +161,46 @@ const updateForcast = async () => {
     dates.includes(el.dt_txt.slice(0, 10))
   );
   // console.log(updatedForcastData);
-  console.log(updatedForcastData);
+  const highTemps = dates.map((date) => {
+    return updatedForcastData
+      .filter((weatherData) => weatherData.dt_txt.slice(0, 10) == date)
+      .reduce(
+        (highTemp, temp) =>
+          highTemp < temp.main.temp ? (highTemp = temp.main.temp) : highTemp,
+        0
+      );
+  });
+  // console.log(highTemps);
+  const lowTemps = dates.map((date) => {
+    return updatedForcastData
+      .filter((weatherData) => weatherData.dt_txt.slice(0, 10) == date)
+      .reduce(
+        (lowTemp, temp) =>
+          lowTemp > temp.main.temp ? (lowTemp = temp.main.temp) : lowTemp,
+        200
+      );
+  });
+  // console.log(lowTemps);
+  dates.forEach((date, index) => {
+    const weatherDataTemplate = `
+    <header>
+      <span>${[date.split("-")[1], date.split("-")[2], date.split("-")[0]].join(
+        "-"
+      )}</span>
+    </header>
+    <section>
+      <p>
+        High: ${highTemps[index]}ºF
+      </p>
+      <p>
+        Low: ${lowTemps[index]}ºF
+      </p>
+    </section>
+    `;
+    const newSection = document.createElement("section");
+    newSection.innerHTML = weatherDataTemplate;
+    forcastCard.appendChild(newSection);
+  });
 };
 
 updateForcast();
