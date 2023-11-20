@@ -190,10 +190,10 @@ const updateForcast = async () => {
     </header>
     <section>
       <p>
-        High: ${highTemps[index]}ºF
+        High: ${Math.round(highTemps[index])}ºF
       </p>
       <p>
-        Low: ${lowTemps[index]}ºF
+        Low: ${Math.round(lowTemps[index])}ºF
       </p>
     </section>
     `;
