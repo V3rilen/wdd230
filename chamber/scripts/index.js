@@ -88,8 +88,8 @@ const windspeedSpan = document.querySelector("#windspeed");
 const windchillSpan = document.querySelector("#windchill");
 const weatherIcon = document.querySelector("#weather-icon");
 const forcastCard = document.querySelector("#forcast");
-const LAT = 43.8300505;
-const LON = -111.7881829;
+const LAT = 40.2573349;
+const LON = -111.6389086;
 const apiKey = "1e82d7865ded7fa3165d96b9bdd12312";
 
 const showWindChill = (temp, speed) => {
@@ -149,7 +149,7 @@ const updateForcast = async () => {
   let dates = [];
   const ONE_DAY = 24 * 60 * 60 * 1000;
   const currentDate = new Date();
-  for (i = 1; i <= 3; i++) {
+  for (i = 0; i <= 2; i++) {
     nextDate = new Date(currentDate.getTime() + ONE_DAY * i);
     // console.log(nextDate);
     nextDate = nextDate.toISOString().slice(0, 10);
