@@ -149,7 +149,7 @@ const updateForcast = async () => {
   let dates = [];
   const ONE_DAY = 24 * 60 * 60 * 1000;
   const currentDate = new Date();
-  for (i = 0; i <= 2; i++) {
+  for (i = 1; i <= 3; i++) {
     nextDate = new Date(currentDate.getTime() + ONE_DAY * i);
     // console.log(nextDate);
     nextDate = nextDate.toISOString().slice(0, 10);
@@ -160,7 +160,7 @@ const updateForcast = async () => {
   updatedForcastData = updatedForcastData.filter((el) =>
     dates.includes(el.dt_txt.slice(0, 10))
   );
-  // console.log(updatedForcastData);
+  console.log(dates);
   const highTemps = dates.map((date) => {
     return updatedForcastData
       .filter((weatherData) => weatherData.dt_txt.slice(0, 10) == date)
