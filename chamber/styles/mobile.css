@@ -450,8 +450,9 @@ fieldset{
 #banner{
     width: 100%;
     text-align: center;
-    background-color: var(--highlight2);
-    color:var(--borders)
+    background-color: var(--indigo-dye);
+    color: white;
+    /* color:white; */
     /* display: none; */
 }
 
