@@ -64,8 +64,13 @@ height: auto;
     grid-template-columns: 1fr 1fr;
 }
 
+.local-gallery img{
+    transition: .15s;
+    }
+
 .local-gallery img:hover{
 box-shadow: 0 0 16px 8px rgba(128, 128, 128, 0.516);
+height: 175px;
 /* border: 3px solid gray; */
 }
 .join-main{
@@ -89,5 +94,9 @@ box-shadow: 0 0 16px 8px rgba(128, 128, 128, 0.516);
 }
 #members-table tr td::before{
     content:"";
+}
+
+#members-table th{
+    display: table-cell;
 }
 }

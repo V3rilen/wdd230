@@ -3,17 +3,21 @@ const memberCardHolder = document.querySelector("#member-cards-holder");
 const displaySwitch = document.querySelector("#display-switch");
 const membersTable = document.querySelector("#members-table");
 let displayAsTable = false;
+const newHeaderRow = document.createElement("tr");
 
 displaySwitch.addEventListener("click", () => {
   displayAsTable = !displayAsTable;
   memberCardHolder.innerHTML = "";
-  membersTable.innerHTML = `<tr>
+  membersTable.innerHTML = "";
+  const tableHeaders = `
   <th>Name</th>
   <th>Address</th>
   <th>Phone</th>
   <th>Website</th>
   <th>Membership level</th>
-</tr>`;
+  `;
+  newHeaderRow.innerHTML = tableHeaders;
+  membersTable.appendChild(newHeaderRow);
   membersTable.classList.toggle("hidden");
   getMemberData();
   if (displayAsTable) {
@@ -33,8 +37,12 @@ const getMemberData = async () => {
       const rowTemplate = `
         <td itemName="Name:"><span>${member.name}</span></td>
         <td itemName="Address:"><span>${member.address}</span></td>
-        <td itemName="Phone #:"><span>${member.phone}</span></td>
-        <td itemName="website:"><a href="${member.website}" target="_blank">${member.website}</a></td>
+        <td ${member.phone && 'itemName="Phone:"'}><span>${
+        member.phone
+      }</span></td>
+        <td itemName="website:"><a href="${member.website}" target="_blank">${
+        member.website
+      }</a></td>
         <td itemName="Membership Level:"><span>${member.memberLevel}</span></td>
       `;
       const newRow = document.createElement("tr");
