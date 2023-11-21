@@ -160,7 +160,7 @@ const updateForcast = async () => {
   updatedForcastData = updatedForcastData.filter((el) =>
     dates.includes(el.dt_txt.slice(0, 10))
   );
-  console.log(dates);
+  // console.log(dates);
   const highTemps = dates.map((date) => {
     return updatedForcastData
       .filter((weatherData) => weatherData.dt_txt.slice(0, 10) == date)
