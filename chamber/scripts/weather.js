@@ -1,16 +1,16 @@
-let today1 = new Date();
+// let today1 = new Date();
 
-// let visitcount = parseInt(localStorage.getItem("visitcount"));
-// if (visitcount) {
-//   visitcount += 1;
-//   localStorage.setItem("visitcount", visitcount);
-//   document.querySelector("#pagevisits").textContent = visitcount;
-// } else {
-//   localStorage.setItem("visitcount", 1);
-// }
+// // let visitcount = parseInt(localStorage.getItem("visitcount"));
+// // if (visitcount) {
+// //   visitcount += 1;
+// //   localStorage.setItem("visitcount", visitcount);
+// //   document.querySelector("#pagevisits").textContent = visitcount;
+// // } else {
+// //   localStorage.setItem("visitcount", 1);
+// // }
 
-document.querySelector("#currentyear").textContent = today1.getFullYear();
-document.querySelector("#lastmodified").textContent = document.lastModified;
+// document.querySelector("#currentyear").textContent = today1.getFullYear();
+// document.querySelector("#lastmodified").textContent = document.lastModified;
 const weatherDescriptionSpan = document.querySelector("#weather-description");
 const temperatureSpan = document.querySelector("#temperature");
 const windspeedSpan = document.querySelector("#windspeed");
@@ -89,7 +89,7 @@ const updateForcast = async () => {
   updatedForcastData = updatedForcastData.filter((el) =>
     dates.includes(el.dt_txt.slice(0, 10))
   );
-  // console.log(dates);
+  console.log(updatedForcastData);
   const highTemps = dates.map((date) => {
     return updatedForcastData
       .filter((weatherData) => weatherData.dt_txt.slice(0, 10) == date)
@@ -109,13 +109,10 @@ const updateForcast = async () => {
         200
       );
   });
-  // console.log(lowTemps);
   dates.forEach((date, index) => {
     const weatherDataTemplate = `
     <header>
-      <span>${[date.split("-")[1], date.split("-")[2], date.split("-")[0]].join(
-        "-"
-      )}</span>
+      <span>${[date.split("-")[1], date.split("-")[2]].join("-")}</span>
     </header>
     <section>
       <p>

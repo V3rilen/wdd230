@@ -5,6 +5,21 @@ let navMenuOpen = false;
 let darkModeEnabled = false;
 const darkModeToggle = document.querySelector(".dark-mode-toggle input");
 const callToActionBtn = document.querySelector(".calltoaction");
+
+let today1 = new Date();
+
+// let visitcount = parseInt(localStorage.getItem("visitcount"));
+// if (visitcount) {
+//   visitcount += 1;
+//   localStorage.setItem("visitcount", visitcount);
+//   document.querySelector("#pagevisits").textContent = visitcount;
+// } else {
+//   localStorage.setItem("visitcount", 1);
+// }
+
+document.querySelector("#currentyear").textContent = today1.getFullYear();
+document.querySelector("#lastmodified").textContent = document.lastModified;
+
 if (localStorage.getItem("darkModeEnabled")) {
   rawDarkModeEnabled = localStorage.getItem("darkModeEnabled");
   if (rawDarkModeEnabled == "true") {
