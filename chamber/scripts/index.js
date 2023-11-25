@@ -77,6 +77,8 @@ if (new Date().getDay() <= 3) {
   bannerDiv.style.display = "block";
 }
 
-bannerButton.addEventListener("click", () => {
-  bannerDiv.style.display = "none";
-});
+if (bannerButton) {
+  bannerButton.addEventListener("click", () => {
+    bannerDiv.style.display = "none";
+  });
+}
