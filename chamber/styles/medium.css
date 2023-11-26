@@ -54,10 +54,8 @@
         grid-row: 3;
         grid-column: 1/3;
     }
-    .headbar img{
-        width: 200px; 
-        
-        /* border-radius: 8px; */
+    .city-logo{
+        width:200px;
     }
     .headbar{
         font-size: 20px;

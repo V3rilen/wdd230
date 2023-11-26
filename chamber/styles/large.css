@@ -50,9 +50,8 @@ height: auto;
     grid-row: 2;
     
 }
-.headbar img{
-    width: 200px; 
-    /* border-radius: 8px; */
+.city-logo{
+    width:300px;
 }
 .headbar{
     font-size: 20px;
