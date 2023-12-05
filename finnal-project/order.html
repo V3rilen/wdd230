@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bountiful Foods</title>
+    <script src="./scripts/order.js" defer></script>
+    <script src="./scripts/side-menu.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        id="page-logo"
+        alt="logo"
+        src="./images/bountiful-logo.webp"
+        height="100"
+      />
+      <h1>Bountiful Foods</h1>
+      <span id="nav-menu-button">≡</span>
+      <section id="nav-menu">
+        <span id="nav-menu-button">≡</span>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./order.html">Order Now</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </section>
+      <a href="./order.html" id="order-now-button">Order Now</a>
+    </nav>
+    <main class="order-main">
+      <header>
+        <h1>
+          <span>Make a Smoothie!</span>
+        </h1>
+      </header>
+      <form action="/">
+        <header>
+          <p>Build Your Own!</p>
+        </header>
+        <label for="first-name">Your Name:</label>
+        <input placeholder="First Name:" name="first-name" required />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder="johndoe@example.com"
+          name="email"
+          required
+        />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" placeholder="123-456-7890" name="phone" required />
+        <label for="ingredient1">Choose a Fruit:</label>
+        <select id="ingredient-dropdown" name="ingredient1" required>
+          <!-- <option value="none">None</option> -->
+        </select>
+        <label for="ingredient2">Choose a Fruit:</label>
+        <select id="ingredient-dropdown" name="ingredient2" required>
+          <!-- <option value="none">None</option> -->
+        </select>
+        <label for="ingredient3">Choose a Fruit:</label>
+        <select id="ingredient-dropdown" name="ingredient3" required>
+          <!-- <option value="none">None</option> -->
+        </select>
+        <div class="size-selector">
+          <span>Select Size:</span>
+          <input
+            type="radio"
+            value="small"
+            name="size"
+            id="size-small"
+            required
+          />
+          <label for="size-small">Small</label>
+          <input
+            type="radio"
+            value="medium"
+            name="size"
+            id="size-medium"
+            required
+          />
+          <label for="size-medium">Medium</label>
+          <input
+            type="radio"
+            value="large"
+            name="size"
+            id="size-large"
+            required
+          />
+          <label for="size-large">Large</label>
+        </div>
+        <label for="special-instructions">Special Instructions</label>
+        <input
+          type="text"
+          placeholder="Instructions"
+          name="special-instructions"
+        />
+        <!-- <input type="hidden" name="time-of-submition" id="time-of-submition" /> -->
+        <div class="submit-section">
+          <input type="submit" value="Make me a smoothie" />
+          <span>Payment is recived upon pickup.</span>
+        </div>
+      </form>
+      <ul id="ingredient-list"></ul>
+    </main>
+    <footer>
+      <div class="social-media">
+        <img alt="facebook" src="./images/facebook.webp" height="32" />
+        <img alt="twitter" src="./images/twitter.webp" height="32" />
+        <img alt="instagram" src="./images/instagram.webp" height="32" />
+      </div>
+    </footer>
+  </body>
+</html>

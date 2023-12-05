@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bountiful Foods</title>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/side-menu.js" defer></script>
+    <script src="./scripts/weather.js" defer></script>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        id="page-logo"
+        alt="logo"
+        src="./images/bountiful-logo.webp"
+        height="100"
+      />
+      <h1>Bountiful Foods</h1>
+      <span id="nav-menu-button">≡</span>
+      <section id="nav-menu">
+        <span id="nav-menu-button">≡</span>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./order.html">Order Now</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </section>
+      <a href="./order.html" id="order-now-button">Order Now</a>
+    </nav>
+    <main>
+      <section class="hero">
+        <picture>
+          <source media="(min-width:900px)" srcset="./images/hero-large.webp" />
+          <source
+            media="(min-width:600px)"
+            srcset="./images/hero-medium.webp"
+          />
+          <img src="./images/hero-small.webp" alt="Hero Image" />
+        </picture>
+        <!-- <img alt="Hero Image" src="./images/hero-image.webp" width="768" /> -->
+        <h1>Bountiful Foods</h1>
+        <a href="./order.html">Create your own!</a>
+      </section>
+      <section class="popular-combos">
+        <header>
+          <h2>Popular Combinations!</h2>
+        </header>
+        <div>
+          <header>
+            <h4>Ocean Dream</h4>
+          </header>
+          <ul>
+            <li>Blue Berry</li>
+            <li>Kiwi</li>
+            <li>Lime</li>
+          </ul>
+        </div>
+        <div>
+          <header>
+            <h4>The Californian</h4>
+          </header>
+          <ul>
+            <li>Orange</li>
+            <li>Apple</li>
+            <li>Charry</li>
+          </ul>
+        </div>
+        <div>
+          <header>
+            <h4>POW Juice</h4>
+          </header>
+          <ul>
+            <li>Papaya</li>
+            <li>Orange</li>
+            <li>Watermelon</li>
+          </ul>
+        </div>
+      </section>
+      <section class="weather">
+        <header>
+          <h1>Weather</h1>
+        </header>
+        <div class="weather-description-container">
+          <span id="weather-description"></span>
+          <img id="weather-icon" />
+        </div>
+        <p>Temperature: <span id="weather-temperature"></span>&deg</p>
+        <p>Humidity: <span id="weather-humidity"></span>%</p>
+      </section>
+      <section class="about-section">
+        <header>
+          <h1>About Us</h1>
+        </header>
+        <p>
+          Bountiful Foods is small business specializing in organic, locally
+          grown foods. We are physically located in Carlsbad, California,
+          however, we have many food trucks that cover the coastal area from Los
+          Angeles to San Diego. Our company sells fruits and produce directly
+          from local farmers in the area, but also uses some national and
+          international suppliers. Our company caters to walk in traffic at our
+          storefront in Carlsbad and, of course, our food trucks. We deliver and
+          manage those orders on the phone and via our website. Our mission is
+          to provide fresh and healthy food options, including organic, made to
+          order, fruit drinks and fruit bags, to the local population and to
+          tourists visiting the coastal areas.
+        </p>
+      </section>
+      <!-- <section>
+        <header>
+          <h1>Ingredients</h1>
+        </header>
+        <ul id="ingredient-list"></ul>
+      </section> -->
+    </main>
+    <footer>
+      <div class="social-media">
+        <img alt="facebook" src="./images/facebook.webp" height="32" />
+        <img alt="twitter" src="./images/twitter.webp" height="32" />
+        <img alt="instagram" src="./images/instagram.webp" height="32" />
+      </div>
+    </footer>
+  </body>
+</html>

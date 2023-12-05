@@ -1,0 +1,54 @@
+@media (min-width:600px){
+    nav{
+        font-size: 14px;
+        gap: 0;
+    }
+    nav h1{
+        display: initial;
+    }
+    #nav-menu{
+        position: static;
+        /* display: block; */
+        /* flex-direction: row wrap; */
+        background-color: inherit;
+        width: auto;
+        padding: 0;
+        margin-left: auto;
+        color: var(--main-text-color);
+        right: initial;
+        font-size: inherit;
+    }
+    #nav-menu-button{
+        display: none;
+    }
+    #nav-menu ul{
+        flex-direction: row;
+        margin-top:revert;
+    }
+    #nav-menu ul li{
+        display: inline-block;
+    }
+    .hero h1{
+        display: none;
+    }
+    #order-now-button{
+        margin-right: 0;
+        margin-left: 32px;
+    }
+    .order-main{
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 1fr;
+    }
+    form{
+        grid-row: 2;
+    }
+    .order-main #ingredient-list{
+        grid-row: 2;
+    }
+    .popular-combos{
+        /* display: flex; */
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: space-evenly;
+    }
+}
