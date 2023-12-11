@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bountiful Foods</title>
+    <script src="./scripts/index.js" defer></script>
+    <script src="./scripts/confirmation.js" defer></script>
+    <script src="./scripts/side-menu.js" defer></script>
+
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        id="page-logo"
+        alt="logo"
+        src="./images/bountiful-logo.webp"
+        height="100"
+      />
+      <h1>Bountiful Foods</h1>
+      <span id="nav-menu-button">≡</span>
+      <section id="nav-menu">
+        <span id="nav-menu-button">≡</span>
+        <ul>
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./order.html">Order Now</a>
+          </li>
+          <li>
+            <a href="./about.html">About</a>
+          </li>
+        </ul>
+      </section>
+      <a href="./order.html" id="order-now-button">Order Now</a>
+    </nav>
+    <main class="order-confirmation-main">
+      <header><h1>Order Confirmation</h1></header>
+      <section class="card order-overview">
+        <header>Order Overview</header>
+        <ul>
+          <li>
+            <p>Name:<span id="firstname"></span></p>
+          </li>
+          <li>
+            <p>Email: <span id="email"></span></p>
+          </li>
+          <li>
+            <p>Phone: <span id="phone"></span></p>
+          </li>
+          <li>
+            <p>Fruit 1: <span id="fruit1"></span></p>
+          </li>
+          <li>
+            <p>Fruit 2: <span id="fruit2"></span></p>
+          </li>
+          <li>
+            <p>Fruit 3: <span id="fruit3"></span></p>
+          </li>
+          <li>
+            <p>Special Instructions: <span id="instructions"></span></p>
+          </li>
+        </ul>
+      </section>
+      <section class="card nutrition">
+        <header>Nutrition. Info</header>
+        <ul>
+          <li>
+            <p>Carbohydrates: <span id="carbohydrates"></span></p>
+          </li>
+          <li>
+            <p>Protein: <span id="protein"></span></p>
+          </li>
+          <li>
+            <p>Fat: <span id="fat"></span></p>
+          </li>
+          <li>
+            <p>Sugar: <span id="sugar"></span></p>
+          </li>
+          <li>
+            <p>Calories : <span id="calories"></span></p>
+          </li>
+        </ul>
+      </section>
+      <section class="order-confirmation-nav">
+        <a class="button" href="#">Looks Good :)</a>
+        <a class="button" href="./order.html">Somethings Wrong :(</a>
+      </section>
+    </main>
+    <footer>
+      <div class="social-media">
+        <img alt="facebook" src="./images/facebook.webp" height="32" />
+        <img alt="twitter" src="./images/twitter.webp" height="32" />
+        <img alt="instagram" src="./images/instagram.webp" height="32" />
+      </div>
+    </footer>
+  </body>
+</html>

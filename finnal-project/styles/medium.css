@@ -51,4 +51,27 @@
         flex-flow: wrap;
         justify-content: space-evenly;
     }
+    .order-confirmation-main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr 3fr 1fr;
+        justify-content:center;
+        row-gap: 16px;
+    }
+    
+    
+    .nutrition{
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    
+    .order-confirmation-nav{
+        grid-column: 1/3;
+        grid-row: 3;
+    }
+    
+    .order-confirmation-nav .button:nth-of-type(2){
+        background-color: var(--color3);
+    }
 }

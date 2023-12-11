@@ -1,9 +1,6 @@
 const ingredientDropdowns = document.querySelectorAll("#ingredient-dropdown");
 const ingredientsList = document.querySelector("#ingredient-list");
 
-document.querySelector("#page-logo").addEventListener("click", () => {
-  window.location.href = "./index.html";
-});
 const getIngredients = async () => {
   const response = await fetch("./ingredients.json");
   const data = await response.json();
