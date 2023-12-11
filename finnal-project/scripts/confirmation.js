@@ -37,21 +37,69 @@ const calculateNutrition = async () => {
     ingredients.find((search) => search.name == params.get("ingredient2")),
     ingredients.find((search) => search.name == params.get("ingredient3")),
   ];
-  carbs.textContent = nutritionInfo.reduce((sum, current) => {
-    return (sum += current.nutritions.carbohydrates);
-  }, 0);
-  protein.textContent = nutritionInfo.reduce((sum, current) => {
-    return (sum += current.nutritions.protein);
-  }, 0);
-  fat.textContent = nutritionInfo.reduce((sum, current) => {
-    return (sum += current.nutritions.fat);
-  }, 0);
-  sugar.textContent = nutritionInfo.reduce((sum, current) => {
-    return (sum += current.nutritions.sugar);
-  }, 0);
-  calories.textContent = nutritionInfo.reduce((sum, current) => {
-    return (sum += current.nutritions.calories);
-  }, 0);
+  return nutritionInfo;
+  //   carbs.textContent = nutritionInfo.reduce((sum, current) => {
+  //     return (sum += current.nutritions.carbohydrates);
+  //   }, 0);
+  //   protein.textContent = nutritionInfo.reduce((sum, current) => {
+  //     return (sum += current.nutritions.protein);
+  //   }, 0);
+  //   fat.textContent = nutritionInfo.reduce((sum, current) => {
+  //     return (sum += current.nutritions.fat);
+  //   }, 0);
+  //   sugar.textContent = nutritionInfo.reduce((sum, current) => {
+  //     return (sum += current.nutritions.sugar);
+  //   }, 0);
+  //   calories.textContent = nutritionInfo.reduce((sum, current) => {
+  //     return (sum += current.nutritions.calories);
+  //   }, 0);
 };
 
 calculateNutrition();
+
+const displayNutrition = async () => {
+  const nutritionInfo = await calculateNutrition();
+  const templateInfo = `
+  <header>Nutrition. Info</header>
+    <ul>
+        <li>
+        <p>Carbohydrates: 
+        ${nutritionInfo.reduce((sum, current) => {
+          return (sum += current.nutritions.carbohydrates);
+        }, 0)}
+        </p>
+        </li>
+        <li>
+        <p>Protein:
+        ${nutritionInfo.reduce((sum, current) => {
+          return (sum += current.nutritions.protein);
+        }, 0)}
+        </p>
+        </li>
+        <li>
+        <p>Fat:
+        ${nutritionInfo.reduce((sum, current) => {
+          return (sum += current.nutritions.fat);
+        }, 0)}
+        </p>
+        </li>
+        <li>
+        <p>Sugar:
+        ${nutritionInfo.reduce((sum, current) => {
+          return (sum += current.nutritions.sugar);
+        }, 0)}
+        </p>
+        </li>
+        <li>
+        <p>Calories:
+        ${nutritionInfo.reduce((sum, current) => {
+          return (sum += current.nutritions.calories);
+        }, 0)}
+        </p>
+        </li>
+    </ul>
+    `;
+  document.querySelector(".nutrition").innerHTML = templateInfo;
+};
+
+displayNutrition();

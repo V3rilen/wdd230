@@ -218,9 +218,13 @@ section > header{
     background-color: var(--color5);
 }
 .size-selector{
-    margin: 16px;
+    font-size: 14px;
+    margin: 8px;
     white-space: nowrap;
 }
+/* .size-selector::marker{
+    content: none;
+} */
 
 .order-main{
     display: grid;
@@ -231,7 +235,7 @@ section > header{
 }
 
 .order-main > header{
-    grid-column: 1/-1;
+    /* grid-column: 1/-1; */
     grid-row: 1;
     height: fit-content;
     background-color: var(--color3);
@@ -255,6 +259,7 @@ form{
     /* width: fit-content; */
     grid-column: 1;
     grid-row: 2;
+    /* overflow: hidden; */
 }
 form select{
     border: 2px solid var(--color5);
@@ -278,16 +283,22 @@ form input[type="submit"]{
     padding: 8px;
     border-radius: 8px;
     width: fit-content;
+    margin: auto;
+    /* justify-self: center; */
 }
 
 form input{
     margin-bottom: 16px;
 }
 
+.payment-description{
+    margin: 16px auto;
+}
+
 .order-confirmation-main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-row: 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr 1fr;
     justify-content:center;
     row-gap: 16px;
 }
@@ -304,8 +315,11 @@ form input{
     grid-column: 1;
     grid-row: 3;
     border: none;
-    background-color: var(--color5);
     justify-self: center;
+}
+
+.nutrition header{
+    background-color: var(--color5);
 }
 
 .order-overview{
@@ -355,9 +369,6 @@ form input{
 .about-section{
     background-color: var(--color5);
     padding: 16px;
-}
-.submit-section{
-    white-space: nowrap;
 }
 
 .about-main section{
