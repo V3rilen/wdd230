@@ -30,3 +30,53 @@ const updateWeather = async () => {
 };
 
 updateWeather();
+
+const getForcast = async () => {
+  const response = await fetch(
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${LAT}&lon=${LON}&appid=${apiKey}&units=imperial`
+  );
+  if (response.ok) {
+    const data = await response.json();
+    return data;
+  }
+};
+const updateForcast = async () => {
+  const forcastData = await getForcast();
+  let dates = [];
+  const ONE_DAY = 24 * 60 * 60 * 1000;
+  const currentDate = new Date();
+  for (i = 1; i <= 3; i++) {
+    nextDate = new Date(currentDate.getTime() + ONE_DAY * i);
+    // console.log(nextDate);
+    nextDate = nextDate.toISOString().slice(0, 10);
+    dates.push(nextDate);
+  }
+  let updatedForcastData = forcastData.list;
+  console.log(updatedForcastData);
+  updatedForcastData = updatedForcastData.filter(
+    (el) =>
+      dates.includes(el.dt_txt.slice(0, 10)) &&
+      el.dt_txt.slice(11, -1) == "09:00:0"
+  );
+  console.log(updatedForcastData);
+  dates.forEach((date, index) => {
+    const weatherDataTemplate = `
+    <header>
+      <span>${[date.split("-")[1], date.split("-")[2]].join("-")}</span>
+    </header>
+    <section>
+      <p>
+        High: ${Math.round(highTemps[index])}ºF
+      </p>
+      <p>
+        Low: ${Math.round(lowTemps[index])}ºF
+      </p>
+    </section>
+    `;
+    const newSection = document.createElement("section");
+    newSection.innerHTML = weatherDataTemplate;
+    forcastCard.appendChild(newSection);
+  });
+};
+
+updateForcast();

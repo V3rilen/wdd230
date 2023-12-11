@@ -295,12 +295,34 @@ form input{
     background-color: var(--color5);
     padding: 16px;
 }
+.submit-section{
+    white-space: nowrap;
+}
+
+.about-main section{
+    padding: 16px;
+    /* width: 50%; */
+    background-color: var(--color5);
+    overflow: hidden;
+}
+
+.about-main section img{
+    padding: 16px;
+    float: inline-start;
+}
+
+.google-map{
+    display: block;
+    /* width: 100%; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+}
 
 footer{
     display: flex;
     margin-top: 16px;
     justify-content: right;
-}
-.submit-section{
-    white-space: nowrap;
+    /* background-color: black; */
+    padding: 16px;
 }
