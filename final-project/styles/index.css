@@ -452,11 +452,18 @@ form input{
     
 }
 
+/* .about-main{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+} */
+
 .about-main section{
     padding: 16px;
-    /* width: 50%; */
+    width: 100%;
     background-color: var(--color5);
     overflow: hidden;
+    /* text-align: center; */
 }
 
 .about-main section img{
@@ -466,7 +473,7 @@ form input{
 
 .google-map{
     display: block;
-    /* width: 100%; */
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 32px;

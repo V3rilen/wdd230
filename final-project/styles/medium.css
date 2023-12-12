@@ -70,4 +70,11 @@
         grid-column: 1/3;
         grid-row: 4;
     }
+
+    .about-main section img{
+        width: 400px;
+    }
+    .about-main section p{
+        width: 900px;
+    }
 }

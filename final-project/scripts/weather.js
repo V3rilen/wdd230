@@ -58,7 +58,7 @@ const updateForcast = async () => {
       dates.includes(el.dt_txt.slice(0, 10)) &&
       el.dt_txt.slice(11, -1) == "09:00:0"
   );
-  console.log(updatedForcastData);
+  // console.log(updatedForcastData);
   updatedForcastData.forEach((date, index) => {
     const weatherDataTemplate = `
     <header>
