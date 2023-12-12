@@ -235,7 +235,7 @@ section > header{
 }
 
 .order-main > header{
-    /* grid-column: 1/-1; */
+    grid-column: 1/-1;
     grid-row: 1;
     height: fit-content;
     background-color: var(--color3);
