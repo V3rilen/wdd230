@@ -116,6 +116,7 @@ nav ul li{
     border: none;
     font-size: 16px;
     text-decoration: none;
+    white-space: nowrap;
 
 }
 
@@ -238,7 +239,7 @@ section > header{
     grid-column: 1/-1;
     grid-row: 1;
     height: fit-content;
-    background-color: var(--color3);
+    background-color: var(--color5);
     text-align: center;
 }
 
