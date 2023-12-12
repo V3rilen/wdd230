@@ -41,3 +41,5 @@ const populateIngredientsList = async () => {
 };
 
 populateIngredientsList();
+
+document.querySelector("#submition-time").value = new Date();
