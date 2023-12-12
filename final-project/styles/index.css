@@ -219,9 +219,11 @@ section > header{
     background-color: var(--color5);
 }
 .size-selector{
-    font-size: 14px;
+    /* display: flex;
+    flex-direction: column; */
+    /* font-size: 14px; */
     margin: 8px;
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 /* .size-selector::marker{
     content: none;
