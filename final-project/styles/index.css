@@ -164,8 +164,12 @@ section > header{
     padding: 8px;
     margin: 8px;
     text-align: center;
+    padding-top: 0;
+    /* justify-content: center; */
 }
-
+#forcast section{
+    padding: 8px;
+}
 #forcast section:not(:last-child){
     border-right: 1px solid black;
 }

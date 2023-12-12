@@ -66,10 +66,10 @@ const updateForcast = async () => {
       </header>
       <p>
       ${date.weather[0].description}
+      </p>
       <img alt="${
         date.weather[0].description
       }" src="https://openweathermap.org/img/wn/${date.weather[0].icon}.png">
-        </p>
         
     `;
     const newSection = document.createElement("section");
