@@ -3,7 +3,7 @@ const temperatureSpan = document.querySelector("#weather-temperature");
 const humiditySpan = document.querySelector("#weather-humidity");
 // const windchillSpan = document.querySelector("#windchill");
 const weatherIcon = document.querySelector("#weather-icon");
-// const forcastCard = document.querySelector("#forcast");
+const forcastCard = document.querySelector("#forcast");
 const LAT = 33.1215196;
 const LON = -117.287802;
 const apiKey = "1e82d7865ded7fa3165d96b9bdd12312";
@@ -52,26 +52,25 @@ const updateForcast = async () => {
     dates.push(nextDate);
   }
   let updatedForcastData = forcastData.list;
-  console.log(updatedForcastData);
+  // console.log(updatedForcastData);
   updatedForcastData = updatedForcastData.filter(
     (el) =>
       dates.includes(el.dt_txt.slice(0, 10)) &&
       el.dt_txt.slice(11, -1) == "09:00:0"
   );
   console.log(updatedForcastData);
-  dates.forEach((date, index) => {
+  updatedForcastData.forEach((date, index) => {
     const weatherDataTemplate = `
     <header>
-      <span>${[date.split("-")[1], date.split("-")[2]].join("-")}</span>
-    </header>
-    <section>
+      <span>${date.dt_txt.split(" ")[0]}</span>
+      </header>
       <p>
-        High: ${Math.round(highTemps[index])}ºF
-      </p>
-      <p>
-        Low: ${Math.round(lowTemps[index])}ºF
-      </p>
-    </section>
+      ${date.weather[0].description}
+      <img alt="${
+        date.weather[0].description
+      }" src="https://openweathermap.org/img/wn/${date.weather[0].icon}.png">
+        </p>
+        
     `;
     const newSection = document.createElement("section");
     newSection.innerHTML = weatherDataTemplate;

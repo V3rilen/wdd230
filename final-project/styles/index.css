@@ -158,6 +158,18 @@ section > header{
     /* margin: auto; */
 }
 
+#forcast{
+    border-top: 1px solid black;
+    display: flex;
+    padding: 8px;
+    margin: 8px;
+    text-align: center;
+}
+
+#forcast section:not(:last-child){
+    border-right: 1px solid black;
+}
+
 #ingredient-list{
     display: flex;
     /* width: 100%; */
@@ -308,7 +320,7 @@ form input{
 .order-confirmation-main{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 3fr 3fr 1fr;
+    grid-template-rows: 1fr inherit 2fr 1fr 1fr;
     justify-content:center;
     /* row-gap: 16px; */
 }
@@ -353,15 +365,23 @@ form input{
     /* display: flex; */
     grid-column: 1/3;
     grid-row: 5;
-    width: 100%;
-    text-align: center;
+    /* width: 100%; */
+    /* text-align: center; */
     /* justify-content: center; */
     /* gap:16px; */
     margin-top: 32px;
 }
 
 .contact-info p{
-    /* Add border and other stuff here */
+    border: 2px solid rgba(0, 0, 0, 0.208);
+    border-top: none;
+    /* width: fit-content; */
+    padding: 8px;
+    margin: 0;
+}
+
+.contact-info p:first-of-type{
+    border-top: 2px solid rgba(0, 0, 0, 0.208);
 }
 
 #confirmation-popup{
