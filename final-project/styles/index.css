@@ -219,15 +219,17 @@ section > header{
     background-color: var(--color5);
 }
 .size-selector{
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
     /* font-size: 14px; */
     margin: 8px;
     /* white-space: nowrap; */
 }
-/* .size-selector::marker{
-    content: none;
-} */
+.size-selector header{
+    width: 100%;
+}
 
 .order-main{
     display: grid;
