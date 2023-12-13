@@ -43,3 +43,8 @@ const populateIngredientsList = async () => {
 populateIngredientsList();
 
 document.querySelector("#submition-time").value = new Date();
+
+document.querySelector("#order-form").addEventListener("submit", () => {
+  const prevOrderCount = parseInt(localStorage.getItem("order-count"));
+  localStorage.setItem("order-count", prevOrderCount + 1);
+});
