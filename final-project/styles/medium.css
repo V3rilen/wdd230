@@ -54,7 +54,7 @@
     .order-confirmation-main{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 3fr 1fr;
+        grid-template-rows: 1fr 1fr auto auto;
         justify-content:center;
         /* row-gap: 16px; */
     }
@@ -70,11 +70,15 @@
         grid-column: 1/3;
         grid-row: 4;
     }
+    .about-main section picture{
+        display: inline;
+    }
 
     .about-main section img{
-        width: 400px;
+        display: inline;
     }
+
     .about-main section p{
-        width: 900px;
+        display: block;
     }
 }

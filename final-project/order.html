@@ -33,9 +33,6 @@
           <li>
             <a href="./about.html">About</a>
           </li>
-          <li>
-            <span id="order-count">Drinks ordered:</span>
-          </li>
         </ul>
       </section>
       <a href="./order.html" id="order-now-button">Order Now</a>
@@ -51,26 +48,53 @@
           <p>Build Your Own!</p>
         </header>
         <label for="first-name">Your Name:</label>
-        <input placeholder="First Name:" name="first-name" required />
+        <input
+          placeholder="First Name:"
+          id="first-name"
+          name="first-name"
+          required
+        />
         <label for="email">Email:</label>
         <input
           type="email"
           placeholder="johndoe@example.com"
+          id="email"
           name="email"
           required
         />
         <label for="phone">Phone Number:</label>
-        <input type="tel" placeholder="123-456-7890" name="phone" required />
+        <input
+          type="tel"
+          placeholder="123-456-7890"
+          id="phone"
+          name="phone"
+          required
+        />
         <label for="ingredient1">Choose a Fruit:</label>
-        <select id="ingredient-dropdown" name="ingredient1" required>
+        <select
+          id="ingredient1"
+          name="ingredient1"
+          class="ingredient-dropdown"
+          required
+        >
           <!-- <option value="none">None</option> -->
         </select>
         <label for="ingredient2">Choose a Fruit:</label>
-        <select id="ingredient-dropdown" name="ingredient2" required>
+        <select
+          id="ingredient2"
+          name="ingredient2"
+          class="ingredient-dropdown"
+          required
+        >
           <!-- <option value="none">None</option> -->
         </select>
         <label for="ingredient3">Choose a Fruit:</label>
-        <select id="ingredient-dropdown" name="ingredient3" required>
+        <select
+          id="ingredient3"
+          name="ingredient3"
+          class="ingredient-dropdown"
+          required
+        >
           <!-- <option value="none">None</option> -->
         </select>
         <div class="size-selector">
@@ -116,9 +140,15 @@
     </main>
     <footer>
       <div class="social-media">
-        <img alt="facebook" src="./images/facebook.webp" height="32" />
-        <img alt="twitter" src="./images/twitter.webp" height="32" />
-        <img alt="instagram" src="./images/instagram.webp" height="32" />
+        <a href="https://www.facebook.com/"
+          ><img alt="facebook" src="./images/facebook.webp" height="32"
+        /></a>
+        <a href="https://www.twitter.com/"
+          ><img alt="twitter" src="./images/twitter.webp" height="32"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img alt="instagram" src="./images/instagram.webp" height="32"
+        /></a>
       </div>
     </footer>
   </body>

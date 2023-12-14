@@ -1,4 +1,4 @@
-const ingredientDropdowns = document.querySelectorAll("#ingredient-dropdown");
+const ingredientDropdowns = document.querySelectorAll(".ingredient-dropdown");
 const ingredientsList = document.querySelector("#ingredient-list");
 
 const getIngredients = async () => {
