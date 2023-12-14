@@ -258,6 +258,7 @@ section > header{
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
     width: 100%;
+    /* justify-content: center; */
 }
 
 .order-main > header{
@@ -282,9 +283,10 @@ form{
     padding: 8px;
     border: 2px solid var(--color1);
     margin:16px;
-    /* width: fit-content; */
+    width: fit-content;
     grid-column: 1;
     grid-row: 2;
+    justify-self: center;
     /* overflow: hidden; */
 }
 form select{
